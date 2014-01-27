@@ -63,12 +63,12 @@ form.search-basic{
 }
 
 .input-btn {
+	position:absolute;
 	width: 70px;
 	height: 32px;
 	border-radius: 3px;
 	background-clip: padding-box;
 	background-color: #cc291b;
-	float:left;
 	margin-left: 10px;
 	background-image: url("search-icon-white.png");
 	background-position: center;
@@ -87,7 +87,7 @@ form.search-basic{
 	padding-bottom: 10px;
 	padding-left:10px;
 	padding-right:10px;
-	z-index: 1;
+	z-index: 2;
 }
 
 .advanced-search select.b {margin-bottom: 0px;}
@@ -133,7 +133,7 @@ form.search-basic{
 }
 .advanced-search .input-btn {
 	margin-left:0px;
-	margin-top:15px;
+	margin-top:46px;
 	margin-bottom:5px;
 }
 .cc {
@@ -169,7 +169,7 @@ form.search-basic{
 	color: #535353;
 	font-family: "OpenSans", sans-serif;
 	font-size: 11px;
-	z-index: 1;
+	z-index: 2;
 }
 .help img {
 	position: absolute;
@@ -186,10 +186,13 @@ form.search-basic{
 .help-box li:last-child {margin-bottom: 0px;}
 
 .switch {
-	margin-top: -22px;
-	margin-left:45px;
 	position: absolute;
-	width: 46px;
+	margin-top: -20px;
+	margin-left:45px;
+	color: #fff;
+	font-family: "OpenSans", sans-serif;
+	font-size: 9px;
+	width: 40px;
 	height: 17px;
 	background-clip: padding-box;
 	background-color: #ff9f16;
@@ -197,22 +200,47 @@ form.search-basic{
 	border-radius: 20px;
 	border: 5px solid #e3e3e3;
 }
-.switch .toggle {
-	float:left;
+input[type="checkbox"]#switch {
+	position:absolute;
+	z-index: -1;
+}
+.switch:after {
+	content: 'off';
+	position: absolute;
+	left: 6px;
+	z-index: 0;
+	margin-top: 3px;
+}
+.switch:before {
+	content: 'on';
+	position: absolute;
+	right: 7px;
+	z-index: 0;
+	margin-top: 3px;
+}
+.switch label {
+	margin-top:-4px;
+	margin-left: -3px;
+	display: block;
 	width: 18px;
 	height: 18px;
+	border-radius: 9px;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
 	border-radius: 9px;
 	background-clip: padding-box;
 	background-color: #efefef;
 	box-shadow: 0 1px 2px rgba(0,0,0,.7), inset 0 2px 1px #fff;
 	background-image: linear-gradient(bottom, rgba(0,0,0,.21) 0%, rgba(255,255,255,.21) 100%);
 }
-.switch p.on-off {
-	margin-top:3px;
-	margin-bottom:0px;
-	margin-left:24px;
-	color:white;
+.switch input[type=checkbox]:checked + label {
+	left: 25px;
 }
+
 
 /*------------------SIDEBAR-----------------*/
 
@@ -266,10 +294,11 @@ form.search-basic{
 }
 
 .table-content {margin-left:10px;z-index:0;}
-.nav-options {position:absolute;margin-top:20px;}
+.nav-options {margin-top:20px;}
 .nav-options form.table-option, .nav-options a.table-option.last-a {padding-left:10px;padding-right:30px;}
 .nav-options a.table-option, form.table-option, .back-arrow, .for-arrow  {
 	float:left;
+	position: relative;
 	color: #535559;
 	font-family: "Myriad Pro";
 	font-size: 11px;
@@ -282,9 +311,11 @@ form.search-basic{
 	background-color: #fff;
 	box-shadow: 0 1px 2px rgba(205,205,205,.3);
 	background-image: linear-gradient(bottom, rgba(0,0,0,.04) 0%, rgba(255,255,255,.04) 100%);
+	clear:none;
 }
+form.table-option {width:10px;float:left;}
 .nav-options a.table-option:hover, img{color:black;cursor:pointer;}
-.nav-options img {position:absolute;}
+.nav-options img {position:absolute;z-index:1;}
 .left-side {
 	padding-top:9px;
 	padding-left:10px;
