@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CMS</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<p id="title">
+			<span id="cardinal">Cardinal</span><br> 
+			<span id="welcome">Welcome
+		</p>
+
+		<form class="search-basic">
+			<input class="search" type="text" name="search">
+			<img src="arrow-down-gray.png" class="search-arrow">
+			<a href="#" src="search.png" class="input-btn" type="input"></a>
+		</form>
+
+		<div class="advanced-search">
+			<p class="gray search-txt">Search Type</p>
+			<form class="advanced">
+				<select class="field-search">
+					<option value="Null">Field Search</option>
+					<option value="">Placeholder1</option>
+					<option value="">Placeholder2</option>
+					<option value="">Placeholder3</option>
+				</select>
+
+				<select class="moved">
+					<option value="Null">Moved</option>
+					<option value="">Placeholder1</option>
+					<option value="">Placeholder2</option>
+					<option value="">Placeholder3</option>
+				</select>
+
+				<select class="number-search">
+					<option value="">is equal</option>
+					<option value="">is greater than</option>
+					<option value="">is less than</option>
+				</select>
+				<span class="gray" style="float:left;margin-top:7px;">to</span>
+				<input class="left" type="text">
+			</form>
+
+			<p class="gray clear gen">General Control</p>
+			<select class="b" type="text" placeholder=>
+					<option value="Null">Search all contacts. Show only matching ones</option>
+					<option value="">Placeholder1</option>
+					<option value="">Placeholder2</option>
+					<option value="">Placeholder3</option>
+			</select>
+			<a href="" src="search-icon-white.png" class="input-btn" type="input"></a>
+			<p class="gray cc" style="">Cancel and close</p>
+		</div>
+
+
+		<div class="help">
+			<p class="help">Help</p>
+			<div class="help-box">
+				<img src="white-arrow.png">
+				<ul class"help-content">
+					<li>Help and FAQ</li>
+					<li style="padding-right:10px;">Hints
+
+
+						<div class="switch on">
+							<div class="toggle"></div>
+							<p class="on-off">on</p>
+						</div>
+
+
+					</li>
+					<li>Maybe some contact info</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+
+	<div id="main">
+		<div class="sidebar">
+				<ul class="box1">
+					<li>Contacts</li>
+					<li class="active" style="padding-left:21px;">Communications</li>
+					<li>Reports</li>
+				</ul>
+				<ul class="box2">
+					<li style="font-weight:bold;">Fund Raising</li>
+					<li>Donations</li>
+					<li>Campaigns</li>
+					<li>Pledges</li>
+					<li>Fund Programs</li>
+					<li>Fund Requests</li>
+					<li>Proposals</li>
+					<li>Prospect Ratings</li>
+				</ul>
+				<ul class="box3">
+					<li style="font-weight:bold;">Events</li>
+				</ul>
+				<ul class="box4">
+					<li style="font-weight:bold;">Time Tracking</li>
+				</ul>
+				<ul class="box5">
+					<li style="font-weight:bold;">Other</li>
+				</ul>
+		</div>
+
+		<div class="table-content">
+			<div class="nav-options">
+				<img src="arrow-down-gray.png" style="margin-left:33px;margin-top:12px;width:8px;">
+				<form action="" class="table-option">
+					<input type="checkbox" name="" value="">
+				</form>
+				<img src="trash.png" class="left-side">
+				<a class="table-option">Delete</a>
+				<img src="more-options.png" class="left-side">
+				<a class="table-option">Export or Print</a>
+				<img src="checkmark.png" class="left-side">
+				<a class="table-option">Set Values</a>
+				<img src="flashlight.png" class="left-side">
+				<a class="table-option">Explore</a>
+				<img src="arrow-down-gray.png" style="margin-left:45px;margin-top:12px;width:8px;">
+				<a class="table-option last-a">More</a>
+
+				<div class="nav-table">
+					<p>1-25 <span style="font-weight:normal;">of</span> 1650</p>
+					<span src="back-arrow.png" class="back-arrow"></span>
+					<span src="for-arrow.png" class="for-arrow"></span>
+				</div>
+			</div>
+
+			<table class="table-main">
+				<tbody>
+					<tr>
+						<td>
+							<form class="row-check" action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Fortune</td>
+						<td>Resoundding Tinkle, 30.04.2010</td>
+						<td>Attendance</td>
+						<td>10009</td>
+						<td>1 June 2010</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Brooke</td>
+						<td>Resoundding Tinkle, 30.04.2010</td>
+						<td>Attendance</td>
+						<td>1468</td>
+						<td>5 May 2010</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Addison</td>
+						<td>Workshop</td>
+						<td>Paper Mail</td>
+						<td>1469</td>
+						<td>27 Dec 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Gibson</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>505</td>
+						<td>5 Dec 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Bob</td>
+						<td>Workshop</td>
+						<td>Email</td>
+						<td>502</td>
+						<td>5 Sep 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Terry</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>456</td>
+						<td>2 Aug 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Hutchinson</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Attendance</td>
+						<td>420</td>
+						<td>13 July 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Attendance</td>
+						<td>420</td>
+						<td>13 June 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Terry</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Attendance</td>
+						<td>420</td>
+						<td>13 May 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Hutchinson</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>87428</td>
+						<td>7 May 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>8 April 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>3 April 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>3 Jan 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Hutchinson</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>87428</td>
+						<td>7 May 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>8 April 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>3 April 2009</td>
+					</tr>
+					<tr>
+						<td>
+							<form action="">
+								<input type="checkbox" name="" value="">
+							</form>
+						</td>
+						<td>Barton</td>
+						<td>Bi-Annual Picnic</td>
+						<td>Email</td>
+						<td>3503</td>
+						<td>3 Jan 2009</td>
+					</tr>
+	
+				</tbody>
+			</table>
+
+			<div class="nav-table" style="margin-top:19px;">
+					<p>1-25 <span style="font-weight:normal;">of</span> 1650</p>
+					<span src="back-arrow.png" class="back-arrow"></span>
+					<span src="for-arrow.png" class="for-arrow"></span>
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+	
+
+
+</body>
+</html>
