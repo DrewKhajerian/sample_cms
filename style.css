@@ -20,8 +20,7 @@ input[type="checkbox"] {
 }
 
 .sidebar, .table-content {float:left;}
-
-.left {float:left;}
+img:hover{cursor: pointer;}
 .gray {color: #9b9b9b;font-family: "OpenSans", sans-serif;font-size: 12px;}
 
 
@@ -279,16 +278,17 @@ input[type="checkbox"]#switch {
 }
 .sidebar ul:first-child{margin-top:68px;}
 
-.active {
+.sidebar li.active {
 	color:#cc291b;
 	border-left: solid 2px #cc291b;
 	font-weight:bold;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left:20px;
 }
 .sidebar li {
+	padding-top: 3px;
+	padding-bottom: 3px;
 	list-style: none;
-	margin-bottom:13px;
+	margin-bottom:7px;
 	padding-left:23px;
 	font-family: "OpenSans", sans-serif;
 	font-size: 11px;
@@ -299,12 +299,12 @@ input[type="checkbox"]#switch {
 .box2 li:first-child {
 	background-image: url("img/arrow-down-gray.png");
 	background-repeat: no-repeat;
-	background-position: 10px 5px;
+	background-position: 10px 7px;
 }
 .box3, .box4, .box5, li:first-child {
 	background-image: url("img/arrow-right.png");
 	background-repeat: no-repeat;
-	background-position: 10px 18px;
+	background-position: 10px 20px;
 }
 
 .table-content {margin-left:10px;z-index:0;}
@@ -326,11 +326,16 @@ input[type="checkbox"]#switch {
 	box-shadow: 0 1px 2px rgba(205,205,205,.3);
 	background-image: linear-gradient(bottom, rgba(0,0,0,.04) 0%, rgba(255,255,255,.04) 100%);
 	clear:none;
-	z-index: -1;
+	z-index: 0;
 }
 form.table-option {width:10px;float:left;}
-.nav-options a.table-option:hover, img{color:black;cursor:pointer;}
-.nav-options img {position:absolute;z-index:0;}
+form.table-option input[type="checkbox"] {
+	position:relative;
+	z-index: 4;
+
+}
+.nav-options a.table-option:hover, img:hover{color:black;cursor:pointer;}
+.nav-options img {position:absolute;z-index:1;}
 .left-side {
 	padding-top:9px;
 	padding-left:10px;
@@ -378,7 +383,6 @@ form.table-option {width:10px;float:left;}
 	font-weight: bold;
 	width: 148px;
 }
-
 .nav-table > p {width:70px;margin-right:0px;}
 .nav-table > span {
 	position:absolute;
@@ -389,6 +393,7 @@ form.table-option {width:10px;float:left;}
 	background-repeat: no-repeat;
 	background-position: center;
 }
+span.back-arrow:hover, span.for-arrow:hover {cursor:pointer;}
 .back-arrow{
 	margin-left:81px;margin-right:4px;
 	background-image: url("img/back-arrow.png")
