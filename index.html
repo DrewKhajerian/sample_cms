@@ -8,6 +8,7 @@
 </head>
 <body>
 	<header>
+		<div class="head-content">
 		<p id="title">
 			<span id="cardinal">Cardinal</span><br> 
 			<span id="welcome">Welcome
@@ -15,11 +16,12 @@
 
 		<form class="search-basic">
 			<input class="search" type="text" name="search">
-			<img src="arrow-down-gray.png" class="search-arrow">
+			<img src="img/arrow-down-gray.png" class="search-arrow">
 			<a href="#" src="search.png" class="input-btn" type="input"></a>
 		</form>
 
 		<div class="advanced-search">
+			<img src="img/x.png" class="x">
 			<p class="gray search-txt">Search Type</p>
 			<form class="advanced">
 				<select class="field-search">
@@ -45,7 +47,7 @@
 				<input class="left" type="text">
 			</form>
 
-			<p class="gray clear gen">General Control</p>
+			<p class="gray clear">General Control</p>
 			<select class="b" type="text" placeholder=>
 					<option value="Null">Search all contacts. Show only matching ones</option>
 					<option value="">Placeholder1</option>
@@ -56,11 +58,10 @@
 			<p class="gray cc" style="">Cancel and close</p>
 		</div>
 
-
 		<div class="help">
 			<p class="help">Help</p>
 			<div class="help-box">
-				<img src="white-arrow.png">
+				<img src="img/white-arrow.png">
 				<ul class"help-content">
 					<li>Help and FAQ</li>
 					<li style="padding-right:10px;">Hints
@@ -73,11 +74,11 @@
 				</ul>
 			</div>
 		</div>
+		</div>
 	</header>
 
-
-
 	<div id="main">
+
 		<div class="sidebar">
 				<ul class="box1">
 					<li>Contacts</li>
@@ -108,19 +109,33 @@
 		<div class="table-content">
 			<div class="nav-options">
 				<img src="arrow-down-gray.png" style="margin-left:33px;margin-top:12px;width:8px;">
-				<form action="" class="table-option">
+				<form action="" class="table-option first">
 					<input type="checkbox" name="" value="">
 				</form>
-				<img src="trash.png" class="left-side">
-				<a class="table-option">Delete</a>
-				<img src="more-options.png" class="left-side">
-				<a class="table-option">Export or Print</a>
-				<img src="checkmark.png" class="left-side">
-				<a class="table-option">Set Values</a>
-				<img src="flashlight.png" class="left-side">
-				<a class="table-option">Explore</a>
-				<img src="arrow-down-gray.png" style="margin-left:45px;margin-top:12px;width:8px;">
+				<img src="img/trash.png" class="left-side">
+				<a class="table-option second">Delete</a>
+				<img src="img/more-options.png" class="left-side">
+				<a class="table-option third">Export or Print</a>
+				<img src="img/checkmark.png" class="left-side">
+				<a class="table-option fourth">Set Values</a>
+				<img src="img/flashlight.png" class="left-side">
+				<a class="table-option fifth">Explore</a>
+
+				<div class="pop-box">
+					<img src="img/white-arrow.png">
+					<p>Describe then investigate the groups of communications.</p>
+					<p style="color:red;margin-top:20px;margin-right:0px;">Turn hints off</p>
+
+					<div class="switch">
+						<input type="checkbox" value="None" id="switch" name="check" />
+						<label for="switch" class="">
+					</div>
+				</div>
+
+
+				<img src="img/arrow-down-gray.png" style="margin-left:45px;margin-top:12px;width:8px;">
 				<a class="table-option last-a">More</a>
+
 
 				<div class="nav-table">
 					<p>1-25 <span style="font-weight:normal;">of</span> 1650</p>
@@ -341,8 +356,8 @@
 
 			<div class="nav-table" style="margin-top:19px;">
 					<p>1-25 <span style="font-weight:normal;">of</span> 1650</p>
-					<span src="back-arrow.png" class="back-arrow"></span>
-					<span src="for-arrow.png" class="for-arrow"></span>
+					<span src="img/back-arrow.png" class="back-arrow"></span>
+					<span src="img/for-arrow.png" class="for-arrow"></span>
 			</div>
 
 		</div>
